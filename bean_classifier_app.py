@@ -180,7 +180,7 @@ bean_info = {
 }
 
 # Create tabs for bean information
-bean_tabs = st.sidebar.tabs(bean_info.keys())
+bean_tabs = st.sidebar.tabs(list(bean_info.keys()))
 for tab, (bean_type, info) in zip(bean_tabs, bean_info.items()):
     with tab:
         # Display bean image
